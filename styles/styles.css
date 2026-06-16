@@ -1,0 +1,183 @@
+@font-face{
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+}
+
+body{
+    margin:0;
+   font-family: 'Plus Jakarta Sans';
+    background:#f5f5f5;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 80px;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    justify-content:center;
+  
+}
+.login{
+     display:flex;
+    justify-self:end;   
+      align-items:center;
+    gap:20px;
+    
+}
+.custlgn{
+    color:black;
+    text-decoration:none;
+       padding:10px 30px;
+}
+.botonsign{
+    background:black;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+main{
+ display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-top:40px;
+
+}
+
+h1{
+    font-size:50px;
+}
+
+.gepete_style{
+  background: linear-gradient(91.61deg, #FF00B8 15.57%, #8F00FF 40.27%,   #004BDD 80.21% );
+
+  color: transparent;
+  background-clip: text;
+}
+
+.createbtn{
+  font-size:20px;
+    background:black;
+    color:white;
+  width:222px;
+    padding:20px 20px;
+align-self: center;
+    border-radius:10px;
+}
+
+.info{
+    margin-top:15px;
+    color:gray;
+}
+
+.imagen{
+  position: relative;
+width: 900px;
+max-width: 90%;
+}
+
+.imagendash{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagendashmbl{
+    display: none;
+    width: 100%;
+height: auto;
+   }
+
+
+footer{
+
+    text-align:center;
+   
+}
+.footertext{
+    
+color: magenta;
+}
+
+.burger{
+    display:none;
+}
+
+
+
+
+@media (max-width:722px){
+
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:25px;
+    }
+
+    .menu{
+        display:none;
+    }
+
+    .login{
+        display:none;
+    }
+
+    .burger{
+        display:block;
+    }
+
+    h1{
+        font-size:42px;
+    }
+    .imagendash{
+        display: none;
+    }
+    .imagendashmbl{
+        display: block;
+    }
+     .gepete_style{
+        background-image: none;
+        color: #FF00B8;
+    }
+}
+
+
+
+@media (max-width:480px){
+
+    header{
+        padding:20px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .createbtn{
+        width:200px;
+        font-size:18px;
+    }
+
+    .info{
+        font-size:14px;
+    }
+       .imagendash{
+        display: none;
+    }
+    .imagendashmbl{
+        display: block;
+    }
+    .gepete_style{
+        background-image: none;
+        color: #FF00B8;
+    }
+}
